@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: esp8266-location
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
